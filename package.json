@@ -1,0 +1,35 @@
+{
+  "name": "a24c268",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^7.9.5",
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^1",
+    "@sap/eslint-plugin-cds": "^3",
+    "@sap/ux-specification": "^1.120.12",
+    "eslint": "^9"
+  },
+  "scripts": {
+    "start": "cds watch",
+    "watch-orders": "cds watch --open orders/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "sapux": [
+    "app/orders"
+  ],
+  "cds": {
+    "i18n": {
+      "default_language": "es",
+      "folders": [
+        "_i18n",
+        "i18n",
+        "assets/i18n"
+      ]
+    }
+  }
+}
